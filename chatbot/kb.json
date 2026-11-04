@@ -1,0 +1,584 @@
+{
+ "version": 1,
+ "site": "http://www.gaestehaus-teufele.de/",
+ "title": "Gästehaus Teufele",
+ "assistantName": "Demo-Assistent",
+ "launcherLabel": "Fragen zum Urlaub?",
+ "avatar": "img/favicon.svg",
+ "placeholder": "z. B. Darf mein Hund mit?",
+ "demoNote": "Demo-Assistent · antwortet nur mit öffentlichen Angaben · bucht und sendet nichts",
+ "theme": {
+  "accent": "#4d6a4b",
+  "accent-d": "#3a5239",
+  "ink": "#1f2a22",
+  "paper": "#f8f4ec",
+  "gold": "#ad4430",
+  "font": "'Karla', system-ui, sans-serif",
+  "serif": "'Gloock', Georgia, serif"
+ },
+ "greeting": "Grüß Gott beim Gästehaus Teufele in Steibis (890 m)! Ich helfe bei Fragen zu Zimmern, Preisen, Frühstück, Hund, Umgebung und Anfahrt. Buchen kann ich nicht – dafür ist das Gästehaus direkt da.",
+ "chips": [
+  {
+   "label": "Zimmer"
+  },
+  {
+   "label": "Preise"
+  },
+  {
+   "label": "Hund"
+  },
+  {
+   "label": "Anfahrt"
+  }
+ ],
+ "stopwords": [
+  "haben",
+  "habt",
+  "gibt",
+  "gibts",
+  "ihre",
+  "euch",
+  "eure",
+  "eine",
+  "einen",
+  "einem",
+  "einer",
+  "auch",
+  "kann",
+  "koennen",
+  "wieviel",
+  "viel",
+  "welche",
+  "welcher",
+  "welches",
+  "bitte",
+  "danke",
+  "hallo",
+  "noch",
+  "dass",
+  "sind",
+  "seid",
+  "wird",
+  "werden",
+  "mich",
+  "uns",
+  "unser",
+  "ihnen",
+  "diese",
+  "dieser",
+  "moechte",
+  "moechten",
+  "gerne",
+  "frage",
+  "fuer",
+  "mein",
+  "meine",
+  "darf",
+  "ich",
+  "wir",
+  "bei",
+  "mit",
+  "der",
+  "die",
+  "das"
+ ],
+ "intents": [
+  {
+   "id": "greet",
+   "keywords": [
+    "hallo",
+    "servus",
+    "gruess gott",
+    "guten tag",
+    "moin",
+    "hi"
+   ],
+   "answer": "Grüß Gott! Suchen Sie ein Zimmer, wollen Sie die Preise wissen oder wie man zu uns findet?",
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "thanks",
+   "keywords": [
+    "danke",
+    "vielen dank",
+    "super",
+    "perfekt"
+   ],
+   "answer": "Gern geschehen – bis bald in Steibis!",
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "zimmer",
+   "weight": 3,
+   "keywords": [
+    "zimmer",
+    "doppelzimmer",
+    "einzelzimmer",
+    "dz",
+    "ez",
+    "balkon",
+    "dusche",
+    "wc",
+    "toilette",
+    "fernseher",
+    "tv",
+    "ausstattung",
+    "schlafen",
+    "zustellbett",
+    "kinderbett"
+   ],
+   "answer": "Es gibt **7 Zimmer**:\n• Nr. **10, 11**: DZ mit Dusche, WC, TV, Balkon\n• Nr. **9**: DZ mit Dusche, WC, TV\n• Nr. **8**: EZ mit Dusche, TV, WC auf dem Flur\n• Nr. **1, 2, 3**: DZ mit Dusche, Balkon, WC auf dem Flur (Nr. 1: Zustellbett für Kleinkind bis ca. 4 J. möglich)\n\nJedes DZ gibt es auch als Einzelzimmer (Zuschlag 20 € / Nacht).",
+   "links": [
+    {
+     "label": "Schlüsselbrett",
+     "href": "#zimmer"
+    },
+    {
+     "label": "Preise & Rechner",
+     "href": "#preise"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Frühstück"
+    }
+   ]
+  },
+  {
+   "id": "price",
+   "weight": 11,
+   "keywords": [
+    "preis",
+    "preise",
+    "kostet",
+    "kosten",
+    "euro",
+    "teuer",
+    "guenstig",
+    "nacht",
+    "uebernachtung",
+    "pro person",
+    "rechner"
+   ],
+   "answer": "**Preise pro Person und Nacht** inkl. Frühstücksbuffet, zzgl. Kurtaxe:\n• Sommer: **55–78 €**\n• Winter: **60–83 €**\nJe nach Zimmer und Aufenthaltsdauer (2 Nächte / ab 3 / ab 7). Im Preisrechner auf der Seite können Sie Ihren Aufenthalt durchrechnen.\n\nPreisstand laut bisheriger Website (Sommer 2025 / Winter 2024/25) – aktuelle Preise bitte erfragen.",
+   "links": [
+    {
+     "label": "Preise & Rechner",
+     "href": "#preise"
+    },
+    {
+     "label": "08386 8326 anrufen",
+     "href": "tel:+4983868326"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Kinder"
+    },
+    {
+     "label": "Hund"
+    }
+   ]
+  },
+  {
+   "id": "kinder",
+   "weight": 4,
+   "keywords": [
+    "kind",
+    "kinder",
+    "baby",
+    "kleinkind",
+    "familie",
+    "familien",
+    "jahre",
+    "alt"
+   ],
+   "answer": "Kinder sind gern gesehene Gäste! Preise pro Nacht: **bis 3 J. 35 €**, **4–5 J. 25 €**, **6–11 J. 18 €**. In Zimmer 1 ist ein Zustellbett für ein Kleinkind (bis ca. 4 J.) möglich.\n\nPreisstand laut bisheriger Website (Sommer 2025 / Winter 2024/25) – aktuelle Preise bitte erfragen.",
+   "links": [
+    {
+     "label": "Preise & Rechner",
+     "href": "#preise"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Winter"
+    }
+   ]
+  },
+  {
+   "id": "hund",
+   "weight": 5,
+   "keywords": [
+    "hund",
+    "hunde",
+    "haustier",
+    "haustiere",
+    "tier",
+    "katze"
+   ],
+   "answer": "Ihr Hund ist herzlich willkommen – **6 € pro Übernachtung**. Bitte bei der Buchung angeben.",
+   "links": [
+    {
+     "label": "Anfrage-Formular",
+     "href": "#anfrage"
+    },
+    {
+     "label": "08386 8326 anrufen",
+     "href": "tel:+4983868326"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "fruehstueck",
+   "weight": 4,
+   "keywords": [
+    "fruehstueck",
+    "fruehstuecken",
+    "buffet",
+    "vegan",
+    "vegetarisch",
+    "regional",
+    "essen",
+    "morgen"
+   ],
+   "answer": "Am Morgen gibt es im Aufenthaltsraum ein **reichhaltiges Frühstücksbuffet mit Produkten aus der Region** – im Zimmerpreis enthalten. **Veganes Frühstück** ist möglich (+5 € pro Übernachtung).",
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    }
+   ]
+  },
+  {
+   "id": "haus",
+   "weight": 2,
+   "keywords": [
+    "haus",
+    "garten",
+    "ruhig",
+    "ruhe",
+    "lage",
+    "aufenthaltsraum",
+    "lesen",
+    "buecher",
+    "satellit"
+   ],
+   "answer": "Das Haus liegt **beschaulich inmitten grüner Wiesen**, fern von Verkehrslärm, aber ortsnah. Großer Garten mit Blumenbeeten, gemütlicher Aufenthaltsraum mit Lektüre und Fernseher (Sat).",
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "sommer",
+   "weight": 3,
+   "keywords": [
+    "wandern",
+    "wanderung",
+    "wanderwege",
+    "sommer",
+    "fahrrad",
+    "rad",
+    "ausflug",
+    "ausfluege",
+    "bodensee",
+    "kleinwalsertal",
+    "oberstdorf",
+    "schloss",
+    "koenigsschloesser",
+    "baden",
+    "badesee",
+    "aquaria",
+    "schwimmbad",
+    "heimatabend"
+   ],
+   "answer": "Direkt vor dem Haus beginnen die **Wanderwege** in die Allgäuer und Österreichischen Alpen. Tagesausflüge mit Bus oder Auto: **Bodensee, Kleinwalsertal, Oberstdorf, Königsschlösser** und Badeseen. Bei Regen: Erlebnisbad **Aquaria** in Oberstaufen. Abends Heimatabende und Schmankerlküche.",
+   "links": [
+    {
+     "label": "Oberstaufen PLUS",
+     "href": "https://www.oberstaufen.de/urlaub/oberstaufen-plus/"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Winter"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "winter",
+   "weight": 3,
+   "keywords": [
+    "winter",
+    "ski",
+    "skifahren",
+    "lift",
+    "lifte",
+    "piste",
+    "loipe",
+    "langlauf",
+    "skischule",
+    "skikurs",
+    "schnee",
+    "schlitten",
+    "pferdeschlitten",
+    "rodeln"
+   ],
+   "answer": "Im Winter: **Ski-Arena Steibis** – die Lifte sind direkt am Ort, Abfahrten und Loipen in verschiedenen Schwierigkeitsgraden. Skikurs bei der Skischule **„Christel Cranz“** (mit Ski-Kindergarten). Dazu Pferdeschlittenfahrten und Winterwanderungen.",
+   "chips": [
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Kinder"
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "weight": 3,
+   "keywords": [
+    "oberstaufen plus",
+    "plus",
+    "gaestepass",
+    "gaestekarte",
+    "kurtaxe",
+    "gutschein"
+   ],
+   "answer": "Das Gästehaus ist **Partner von Oberstaufen PLUS**: Sie erhalten Ihren Gästepass mit Oberstaufen PLUS (Mehrzweck-Gutschein) und damit Vorteile und Erlebnisse für Ihren Aufenthalt. Die **Kurtaxe** kommt zum Zimmerpreis hinzu.",
+   "links": [
+    {
+     "label": "Oberstaufen PLUS",
+     "href": "https://www.oberstaufen.de/urlaub/oberstaufen-plus/"
+    }
+   ]
+  },
+  {
+   "id": "address",
+   "weight": 3,
+   "keywords": [
+    "adresse",
+    "anfahrt",
+    "anreise",
+    "wo seid",
+    "wo sind",
+    "wo ist",
+    "wo liegt",
+    "wie komme",
+    "route",
+    "navi",
+    "steibis",
+    "finden",
+    "finde",
+    "parken",
+    "weg"
+   ],
+   "answer": "**Gästehaus Teufele**\nAm Schwedenkreuz 18\n87534 Oberstaufen-Steibis\n\nTipp des Hauses: Direkt nach dem Ortsschild Steibis **rechts abbiegen** und geradeaus. Meldet das Navi am Holzstadel „Ziel erreicht“ – noch ein paar Dutzend Meter weiter!",
+   "links": [
+    {
+     "label": "Der letzte Kilometer",
+     "href": "#anfahrt"
+    },
+    {
+     "label": "Route (OpenStreetMap)",
+     "href": "https://www.openstreetmap.org/?mlat=47.5323302&mlon=10.0177167#map=17/47.5323302/10.0177167"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "contact",
+   "weight": 2,
+   "keywords": [
+    "telefon",
+    "anrufen",
+    "nummer",
+    "erreichen",
+    "kontakt",
+    "email",
+    "e mail",
+    "mail",
+    "post",
+    "buchen",
+    "buchung",
+    "reservieren",
+    "anfrage",
+    "frei",
+    "verfuegbar",
+    "belegung"
+   ],
+   "answer": "Buchen und freie Termine klären Sie direkt mit dem Gästehaus:\nTel.: **+49 (0) 8386 / 8326**\nE-Mail: **info@gaestehaus-teufele.de**\nPost: Am Schwedenkreuz 18, 87534 Oberstaufen-Steibis",
+   "links": [
+    {
+     "label": "08386 8326 anrufen",
+     "href": "tel:+4983868326"
+    },
+    {
+     "label": "E-Mail schreiben",
+     "href": "mailto:info@gaestehaus-teufele.de"
+    },
+    {
+     "label": "Anfrage-Formular",
+     "href": "#anfrage"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "weight": 3,
+   "keywords": [
+    "sauna",
+    "wellness",
+    "wlan",
+    "wifi",
+    "internet",
+    "parkplatz",
+    "garage",
+    "ladestation",
+    "aufzug",
+    "barrierefrei",
+    "check in",
+    "anreisezeit",
+    "abendessen",
+    "halbpension",
+    "storno",
+    "stornierung",
+    "kreditkarte",
+    "ferienwohnung"
+   ],
+   "answer": "Dazu steht auf der Website leider noch nichts – am besten kurz anrufen: **08386 8326** oder eine E-Mail schreiben.",
+   "links": [
+    {
+     "label": "08386 8326 anrufen",
+     "href": "tel:+4983868326"
+    },
+    {
+     "label": "E-Mail schreiben",
+     "href": "mailto:info@gaestehaus-teufele.de"
+    }
+   ],
+   "chips": [
+    {
+     "label": "Zimmer"
+    },
+    {
+     "label": "Preise"
+    },
+    {
+     "label": "Hund"
+    },
+    {
+     "label": "Anfahrt"
+    }
+   ]
+  }
+ ],
+ "menu": {
+  "foundPrefix": "",
+  "links": [],
+  "followChips": [],
+  "sections": []
+ },
+ "fallback": {
+  "text": "Das kann ich leider nicht sicher beantworten – ich kenne nur die öffentlichen Angaben (Zimmer, Preise, Frühstück, Umgebung, Anfahrt). Rufen Sie gern an: **08386 8326**.",
+  "links": [
+   {
+    "label": "08386 8326 anrufen",
+    "href": "tel:+4983868326"
+   },
+   {
+    "label": "E-Mail schreiben",
+    "href": "mailto:info@gaestehaus-teufele.de"
+   }
+  ]
+ }
+}

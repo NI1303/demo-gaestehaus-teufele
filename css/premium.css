@@ -1,0 +1,20 @@
+/* Premium-Schicht: Intro – das Holzschild „Haus Teufele“ schwingt ein */
+.intro{display:none}
+html.intro-on .intro{display:block;position:fixed;inset:0;z-index:1000;cursor:pointer;overflow:hidden;background:radial-gradient(ellipse at 50% 120%,#2c5161,var(--see) 60%);animation:introFailsafe .01s 4.2s forwards;transition:opacity .6s,transform .7s cubic-bezier(.7,0,.25,1)}
+html.intro-on[data-season=winter] .intro{background:radial-gradient(ellipse at 50% 120%,#3a627d,#1a2e3d 60%)}
+@keyframes introFailsafe{to{visibility:hidden;pointer-events:none}}
+.intro-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.intro-sign{width:min(76vw,420px);height:auto;overflow:visible}
+.intro-sign path{fill:none;stroke:#e9d3b4;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:isDraw .8s var(--ease) forwards}
+.intro-sign .is-post{animation-delay:.25s}
+.is-board{transform-origin:160px 100px;animation:isSwing 1.3s .45s var(--ease) both}
+.is-board rect{fill:#9a6a3f;stroke:#e9d3b4;stroke-width:3}
+.is-board text{font:400 30px Gloock,Georgia,serif;fill:#fbf8f1;text-anchor:middle}
+@keyframes isDraw{to{stroke-dashoffset:0}}
+@keyframes isSwing{0%{opacity:0;transform:translateY(-30px) rotate(-14deg)}35%{opacity:1;transform:rotate(9deg)}60%{transform:rotate(-5deg)}80%{transform:rotate(2deg)}100%{opacity:1;transform:none}}
+.intro-hand{font:400 clamp(1.5rem,4vw,2.4rem)/1 var(--hand);color:#f3d8c9;margin:1.4rem 0 0;opacity:0;animation:nbIn .5s 1s forwards;transform:rotate(-3deg)}
+@keyframes nbIn{to{opacity:1}}
+.intro-skip{position:absolute;right:1.4rem;bottom:1.4rem;background:#fbf8f1;border:0;color:var(--see);font:700 .85rem/1 var(--body);padding:.8rem 1.1rem;border-radius:999px;cursor:pointer}
+.intro-skip:focus-visible{outline:2px solid #fff;outline-offset:2px}
+html.intro-out .intro{opacity:0;transform:translateY(-4%);pointer-events:none}
+@media (prefers-reduced-motion:reduce){.intro{display:none!important}}

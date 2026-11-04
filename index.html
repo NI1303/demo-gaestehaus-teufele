@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="de" data-season="sommer">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gästehaus Teufele – Pension in Steibis-Oberstaufen (Demo)</title>
+<meta name="description" content="Demo-Entwurf: Familiär geführtes Gästehaus in Steibis (890 m) im Allgäu – Zimmer, Preise, Wandern und Ski direkt vor dem Haus.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d3a47">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/gloock-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="chatbot/chatbot.css">
+<link rel="stylesheet" href="css/premium.css">
+<script>document.documentElement.classList.add('js')</script>
+<script>try{var q=new URLSearchParams(location.search).get('saison'),s=q||localStorage.getItem('teufele-saison');if(!s){var d=new Date(),m=d.getMonth()+1,t=d.getDate();s=(m>4&&m<11)||(m==4&&t>=15)||(m==11&&t<=2)?'sommer':'winter'}document.documentElement.dataset.season=s==='winter'?'winter':'sommer'}catch(e){}</script>
+<script>try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('demo-intro'))document.documentElement.classList.add('intro-on')}catch(e){}</script>
+</head>
+<body id="top" data-cursor>
+<div class="intro" data-intro="1700" role="presentation">
+  <div class="intro-in">
+    <svg class="intro-sign" viewBox="0 0 320 240" aria-hidden="true">
+      <path class="is-roof" pathLength="1" d="M20 92 L160 18 L300 92"/>
+      <path class="is-post" pathLength="1" d="M70 80 V236 M250 80 V236"/>
+      <g class="is-board"><rect x="46" y="112" width="228" height="58" rx="4"/><text x="160" y="152">Haus Teufele</text></g>
+    </svg>
+    <p class="intro-hand">Grüß Gott in Steibis!</p>
+  </div>
+  <button class="intro-skip" type="button">Intro überspringen</button>
+</div>
+<div class="demo-banner" role="note"><strong>Inoffizielle Demo</strong> – Entwurf für eine neue Website des Gästehauses Teufele. Keine offizielle Seite, keine Buchung möglich. Gelb markierte Stellen sind Platzhalter.</div>
+<header class="site-header">
+  <a class="brand" href="index.html#top" aria-label="Gästehaus Teufele – Startseite"><svg class="logo-key" viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="11" width="22" height="27" rx="11" fill="#ad4430"/><circle cx="20" cy="7" r="5" fill="none" stroke="#1f2a22" stroke-width="2"/><text x="20" y="30" text-anchor="middle" font-family="Gloock,Georgia,serif" font-size="13" fill="#f8f4ec">T</text></svg><span class="brand-t"><b>Gästehaus Teufele</b><small>Steibis · 890 m · Allgäu</small></span></a>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list"><span class="sr-only">Menü</span><span></span><span></span><span></span></button>
+    <ul id="nav-list">
+      <li><a href="index.html#haus">Das Haus</a></li>
+      <li><a href="index.html#zimmer">Zimmer</a></li>
+      <li><a href="index.html#preise">Preise</a></li>
+      <li><a href="index.html#rundherum">Rundherum</a></li>
+      <li><a href="index.html#anfahrt">Anfahrt</a></li>
+      <li class="nav-cta"><a href="index.html#anfrage">Anfragen</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="hero" data-hero data-chapter="Ankommen" data-ch-no="00">
+  <div class="hero-img" data-parallax=".08">
+    <img class="s-sommer-img stock" src="img/stock/blumenwiese.webp" srcset="img/stock/blumenwiese-800.webp 900w, img/stock/blumenwiese.webp 1600w" sizes="100vw" alt="Blühende Bergwiese im Allgäu" width="1600" height="1067" fetchpriority="high" decoding="async">
+    <img class="s-winter-img stock" src="img/stock/winterhang.webp" srcset="img/stock/winterhang-800.webp 900w, img/stock/winterhang.webp 1600w" sizes="100vw" alt="Verschneiter Hang mit Häusern und Tannen" width="1600" height="748" loading="lazy" decoding="async">
+  </div>
+  <canvas class="hero-snow" data-particles="snow" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="season" role="group" aria-label="Saison wählen">
+      <button type="button" data-season-set="sommer" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><span>Sommer</span></button>
+      <button type="button" data-season-set="winter" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 3.5l3 2.5 3-2.5M9 20.5l3-2.5 3 2.5"/></svg><span>Winter</span></button>
+    </div>
+    <p class="hand hero-hand"><span class="s-sommer">Wiesen, Ruhe, Allgäuer Luft.</span><span class="s-winter">Lifte direkt am Ort.</span></p>
+    <h1><span class="h-small">Endlich da.</span> Ihr Zimmer<br>in Steibis <em>wartet.</em></h1>
+    <p class="hero-lead">Ein familiär geführtes Gästehaus im heilklimatischen Bergdorf Steibis (890&nbsp;m) – beschaulich inmitten grüner Wiesen, fern von Verkehrslärm und trotzdem ortsnah.</p>
+    <div class="hero-cta">
+      <a class="btn magnetic" href="#zimmer">Schlüssel aussuchen</a>
+      <a class="btn btn-line" href="tel:+4983868326">Anrufen · 08386 8326</a>
+    </div>
+    <p class="rating"><span class="ph">Bewertung 4,7/5 aus 15 Rezensionen (Online-Eintrag, Stand 02.11.2026) – Plattform &amp; Zahl vor Veröffentlichung prüfen</span></p>
+  </div>
+  <figure class="polaroid hero-pol" style="--rot:4deg">
+    <span class="s-sommer"><img src="img/haus-sommer.webp" alt="Das Gästehaus Teufele im Sommer mit Blumenkästen" width="150" height="112" fetchpriority="high" decoding="async"></span>
+    <span class="s-winter"><img src="img/haus-winter.webp" alt="Das Gästehaus Teufele im Winter mit verschneitem Schild" width="250" height="179" loading="lazy" decoding="async"></span>
+    <figcaption class="hand">unser Haus <span class="s-sommer">im Sommer</span><span class="s-winter">im Winter</span></figcaption>
+  </figure>
+  <p class="hero-credit sym">Hintergrund: Symbolbild</p>
+</section>
+
+<section id="haus" class="haus" data-chapter="Das Haus" data-ch-no="01">
+  <div class="wrap haus-grid">
+    <div class="haus-text">
+      <p class="kicker">01 · Das Haus</p>
+      <h2 data-split>Ruhig gelegen, <em>familiär geführt.</em></h2>
+      <p class="intro-p">Unser Haus liegt beschaulich inmitten grüner Wiesen. Im großen, von Blumenbeeten gesäumten Garten genießen Sie die Ruhe und die gute Allgäuer Luft.</p>
+      <ul class="ticks">
+        <li>Großer Garten mit Blumenbeeten</li>
+        <li>Gemütlicher Aufenthaltsraum mit kleiner Lektüre-Auswahl</li>
+        <li>Fernseher mit Satelliten-Empfang zur freien Verfügung</li>
+        <li>Kinder sind gern gesehene Gäste</li>
+        <li>Hund willkommen – bitte bei der Buchung angeben</li>
+        <li>Partner von <b>Oberstaufen PLUS</b></li>
+      </ul>
+      <div class="gastgeber">
+        <div class="gg-ph" aria-hidden="true">Foto</div>
+        <p><span class="hand">Ihre Gastgeber</span><br><span class="ph">Namen &amp; persönlicher Gruß der Gastgeber (Impressum: Renate Mann)</span></p>
+      </div>
+    </div>
+    <div class="haus-pics">
+      <figure class="polaroid p-schild" style="--rot:-3deg" data-reveal><img src="img/schild.webp" alt="Holzschild „Haus Teufele“ im Garten" width="300" height="400" loading="lazy" decoding="async"><figcaption class="hand">unser Schild am Garten</figcaption></figure>
+      <figure class="p-buffet" data-clip><img class="stock" src="img/stock/buffet.webp" srcset="img/stock/buffet-800.webp 600w, img/stock/buffet.webp 1067w" sizes="(min-width:900px) 30vw, 70vw" alt="Frühstücksbuffet mit regionalen Produkten" width="1067" height="1600" loading="lazy" decoding="async"><figcaption>Frühstücksbuffet <span class="sym">Symbolbild</span></figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap fruehstueck">
+    <figure class="fr-img" data-parallax=".05"><img class="stock" src="img/stock/brot.webp" srcset="img/stock/brot-800.webp 600w, img/stock/brot.webp 1067w" sizes="(min-width:900px) 30vw, 90vw" alt="Brot und Brezen auf dem Frühstückstisch" width="1067" height="1600" loading="lazy" decoding="async"><figcaption><span class="sym">Symbolbild</span></figcaption></figure>
+    <blockquote class="fr-q">
+      <p>„Am Morgen bekommen Sie ein <em>reichhaltiges Frühstücksbuffet</em> mit köstlichen Produkten aus der Region – für den kommenden Tag stärken Sie sich nach Belieben.“</p>
+      <p class="small">Im Aufenthaltsraum · veganes Frühstück möglich (+5&nbsp;€ pro Übernachtung)</p>
+    </blockquote>
+  </div>
+</section>
+
+<section id="zimmer" class="zimmer" data-chapter="Zimmer" data-ch-no="02">
+  <div class="wrap">
+    <p class="kicker k-light">02 · Die Zimmer</p>
+    <h2 data-split>Sieben Schlüssel. <em>Einer ist Ihrer.</em></h2>
+    <p class="intro-p">Je nach Wunsch mit Dusche, Dusche/WC und/oder Balkon. Jedes Doppelzimmer gibt es auch als Einzelzimmer. Nehmen Sie einen Schlüssel vom Brett:</p>
+  </div>
+  <div class="wrap brett-wrap" data-draw>
+    <div class="brett">
+      <p class="brett-head" aria-hidden="true">Gästehaus Teufele · Zimmer</p>
+      <ul class="hooks">
+        <li class="hook" style="--i:0">
+          <button class="fob" type="button" data-room="1" aria-pressed="false" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">1</span><span class="tag-art">DZ</span></span>
+            <span class="sr-only">Zimmer 1, Doppelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+        <li class="hook" style="--i:1">
+          <button class="fob" type="button" data-room="2" aria-pressed="false" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">2</span><span class="tag-art">DZ</span></span>
+            <span class="sr-only">Zimmer 2, Doppelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+        <li class="hook" style="--i:2">
+          <button class="fob" type="button" data-room="3" aria-pressed="false" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">3</span><span class="tag-art">DZ</span></span>
+            <span class="sr-only">Zimmer 3, Doppelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+        <li class="hook" style="--i:3">
+          <button class="fob" type="button" data-room="8" aria-pressed="false" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">8</span><span class="tag-art">EZ</span></span>
+            <span class="sr-only">Zimmer 8, Einzelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+        <li class="hook" style="--i:4">
+          <button class="fob" type="button" data-room="9" aria-pressed="false" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">9</span><span class="tag-art">DZ</span></span>
+            <span class="sr-only">Zimmer 9, Doppelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+        <li class="hook" style="--i:5">
+          <button class="fob" type="button" data-room="10" aria-pressed="true" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">10</span><span class="tag-art">DZ</span></span>
+            <span class="sr-only">Zimmer 10, Doppelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+        <li class="hook" style="--i:6">
+          <button class="fob" type="button" data-room="11" aria-pressed="false" aria-controls="room-card">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="tag"><span class="tag-no">11</span><span class="tag-art">DZ</span></span>
+            <span class="sr-only">Zimmer 11, Doppelzimmer – Details anzeigen</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <article class="room-card" id="room-card" aria-live="polite">
+      <p class="rc-no">Zimmer <b data-rc="no">10</b></p>
+      <h3 data-rc="art">Doppelzimmer</h3>
+      <ul class="rc-aus" data-rc="aus"><li>Dusche</li><li>WC</li><li>TV</li><li>Balkon</li></ul>
+      <p class="rc-note" data-rc="note" hidden></p>
+      <div data-rc="pt"><table class="pt"><caption class="sr-only">Preis pro Person und Nacht</caption><thead><tr><th scope="col">Aufenthalt</th><th scope="col">2 Nächte</th><th scope="col">ab 3</th><th scope="col">ab 7</th></tr></thead><tbody><tr class="s-sommer"><th scope="row">Sommer</th><td>78&nbsp;€</td><td>70&nbsp;€</td><td>65&nbsp;€</td></tr><tr class="s-winter"><th scope="row">Winter</th><td>83&nbsp;€</td><td>75&nbsp;€</td><td>70&nbsp;€</td></tr></tbody></table></div>
+      <p class="small">€ pro Person und Nacht, inkl. Frühstücksbuffet, zzgl. Kurtaxe. <span class="ph">Preisstand: Sommer 2025 / Winter 2024/25 – Preise 2026 bestätigen</span></p>
+      <figure class="rc-foto"><span class="ph">Echtes Foto von Zimmer <b data-rc="no2">10</b> fehlt</span><img class="stock" src="img/stock/zimmer.webp" srcset="img/stock/zimmer-800.webp 615w, img/stock/zimmer.webp 1093w" sizes="(min-width:900px) 30vw, 90vw" alt="Helles Zimmer mit Holz und Tageslicht" width="1093" height="1600" loading="lazy" decoding="async"><figcaption>Stimmung, nicht das Zimmer <span class="sym">Symbolbild</span></figcaption></figure>
+      <a class="btn magnetic" href="#anfrage" data-room-ask>Zimmer <span data-rc="no3">10</span> anfragen</a>
+    </article>
+  </div>
+</section>
+
+<section id="preise" class="preise" data-chapter="Preise" data-ch-no="03">
+  <div class="wrap preise-grid">
+    <div>
+      <p class="kicker">03 · Preise &amp; Rechner</p>
+      <h2 data-split>Ehrliche Preise, <em>ohne Kleingedrucktes.</em></h2>
+      <p class="intro-p">Alle Preise pro Person und Nacht, inklusive reichhaltigem Frühstücksbuffet, zuzüglich Kurtaxe. Gästepass mit <b>Oberstaufen PLUS</b> inklusive.</p>
+      <div class="season-label"><span class="s-sommer">Sommer · 15.04. bis 02.11.2025</span><span class="s-winter">Winter · ab 14.12.2024</span> <span class="ph">Saisonzeiten 2026 ergänzen</span></div>
+      <table class="plist">
+        <caption class="sr-only">Preisliste pro Person und Nacht</caption>
+        <thead><tr><th scope="col">Zimmer</th><th scope="col">2 Nächte</th><th scope="col">ab 3</th><th scope="col">ab 7</th></tr></thead>
+        <tbody><tr><th scope="row"><span class="pl-no">Nr. 10, 11</span>DZ · Dusche, WC, TV, Balkon</th><td><span class="s-sommer">78&nbsp;€</span><span class="s-winter">83&nbsp;€</span></td><td><span class="s-sommer">70&nbsp;€</span><span class="s-winter">75&nbsp;€</span></td><td><span class="s-sommer">65&nbsp;€</span><span class="s-winter">70&nbsp;€</span></td></tr><tr><th scope="row"><span class="pl-no">Nr. 9</span>DZ · Dusche, WC, TV</th><td><span class="s-sommer">75&nbsp;€</span><span class="s-winter">81&nbsp;€</span></td><td><span class="s-sommer">67&nbsp;€</span><span class="s-winter">73&nbsp;€</span></td><td><span class="s-sommer">62&nbsp;€</span><span class="s-winter">68&nbsp;€</span></td></tr><tr><th scope="row"><span class="pl-no">Nr. 8</span>EZ · Dusche, WC Flur, TV</th><td><span class="s-sommer">68&nbsp;€</span><span class="s-winter">76&nbsp;€</span></td><td><span class="s-sommer">62&nbsp;€</span><span class="s-winter">68&nbsp;€</span></td><td><span class="s-sommer">57&nbsp;€</span><span class="s-winter">63&nbsp;€</span></td></tr><tr><th scope="row"><span class="pl-no">Nr. 1</span>DZ · Dusche, Balkon, WC Flur*</th><td><span class="s-sommer">68&nbsp;€</span><span class="s-winter">76&nbsp;€</span></td><td><span class="s-sommer">62&nbsp;€</span><span class="s-winter">68&nbsp;€</span></td><td><span class="s-sommer">57&nbsp;€</span><span class="s-winter">63&nbsp;€</span></td></tr><tr><th scope="row"><span class="pl-no">Nr. 2, 3</span>DZ · Dusche, Balkon, WC Flur</th><td><span class="s-sommer">65&nbsp;€</span><span class="s-winter">73&nbsp;€</span></td><td><span class="s-sommer">58&nbsp;€</span><span class="s-winter">65&nbsp;€</span></td><td><span class="s-sommer">55&nbsp;€</span><span class="s-winter">60&nbsp;€</span></td></tr></tbody>
+      </table>
+      <ul class="extras">
+        <li><b>Kinder</b> bis 3 J. 35&nbsp;€ · 4–5 J. 25&nbsp;€ · 6–11 J. 18&nbsp;€</li>
+        <li><b>Einzelzimmerzuschlag</b> (Übernachtung im DZ) 20&nbsp;€ / Nacht</li>
+        <li><b>Hund</b> 6&nbsp;€ / Nacht</li>
+        <li><b>Veganes Frühstück</b> +5&nbsp;€ / Übernachtung</li>
+        <li><small>* Zimmer 1: Zustellbett für Kleinkind (bis ca. 4 Jahre) möglich</small></li>
+      </ul>
+    </div>
+    <form class="rechner" data-rechner aria-labelledby="re-h">
+      <h3 id="re-h"><span class="hand">Rechnen Sie selbst</span>Ihr Aufenthalt</h3>
+      <label class="fld">Zimmer<select name="room"><option value="1">Nr. 1 · Doppelzimmer</option><option value="2">Nr. 2 · Doppelzimmer</option><option value="3">Nr. 3 · Doppelzimmer</option><option value="8">Nr. 8 · Einzelzimmer</option><option value="9">Nr. 9 · Doppelzimmer</option><option value="10" selected>Nr. 10 · Doppelzimmer</option><option value="11">Nr. 11 · Doppelzimmer</option></select></label>
+      <div class="two">
+        <label class="fld">Nächte<input type="number" name="n" min="2" max="28" value="7" inputmode="numeric"></label>
+        <label class="fld">Erwachsene<select name="ad"><option value="1">1</option><option value="2" selected>2</option></select></label>
+      </div>
+      <fieldset class="kids"><legend>Kinder</legend>
+        <label>bis 3 J.<input type="number" name="k1" min="0" max="3" value="0" inputmode="numeric"></label>
+        <label>4–5 J.<input type="number" name="k2" min="0" max="3" value="0" inputmode="numeric"></label>
+        <label>6–11 J.<input type="number" name="k3" min="0" max="3" value="0" inputmode="numeric"></label>
+      </fieldset>
+      <div class="checks">
+        <label class="chk"><input type="checkbox" name="dog"> mit Hund</label>
+        <label class="chk"><input type="checkbox" name="vegan"> veganes Frühstück</label>
+      </div>
+      <output class="re-out" name="out" aria-live="polite"><span class="re-sum">–</span><span class="re-det"></span></output>
+      <p class="small">Unverbindliche Beispielrechnung auf Basis der bisherigen Preisliste, zzgl. Kurtaxe. Ob Zimmer und Termin frei sind, klären Sie direkt mit dem Gästehaus. <span class="ph">Belegung/Verfügbarkeit: nur auf Anfrage</span></p>
+    </form>
+  </div>
+</section>
+
+<section id="rundherum" class="rundherum" data-chapter="Rundherum" data-ch-no="04">
+  <div class="wrap">
+    <p class="kicker">04 · Rundherum</p>
+    <h2 data-split>Vor der Haustür <em>beginnt der Berg.</em></h2>
+    <p class="intro-p"><span class="s-sommer">Rundherum bieten sich unzählige Möglichkeiten, den Tag zu verbringen – zu Fuß, mit dem Rad oder auf Tagesausflug.</span><span class="s-winter">Auch im Winter können Sie bei uns viel erleben – von der Piste bis zum Pferdeschlitten.</span></p>
+  </div>
+  <div class="profil-wrap">
+    <svg class="profil" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true" data-scrolldraw>
+  <path class="pf-fill" d="M0 260 L0 200 C80 196 140 180 210 178 C260 176 300 186 340 170 C400 146 450 120 520 96 C560 82 590 54 640 38 C680 26 700 44 740 52 C800 66 840 90 900 104 C960 118 1020 140 1080 150 C1130 158 1170 166 1200 170 L1200 260Z"/>
+  <path class="pf-line" pathLength="1" d="M0 200 C80 196 140 180 210 178 C260 176 300 186 340 170 C400 146 450 120 520 96 C560 82 590 54 640 38 C680 26 700 44 740 52 C800 66 840 90 900 104 C960 118 1020 140 1080 150 C1130 158 1170 166 1200 170"/>
+</svg>
+    <p class="pf-mark pf-haus"><span class="pf-dot"></span><b>Gästehaus Teufele</b>Steibis · 890&nbsp;m</p>
+    <p class="pf-mark pf-gipfel"><span class="pf-dot"></span><b>Hochgrat</b>1.834&nbsp;m</p>
+    <p class="pf-note hand">schematisch, nicht maßstäblich</p>
+  </div>
+  <div class="wrap tiles">
+        <article class="tile s-sommer" data-reveal style="--i:0">
+          <figure><img src="img/wanderweg.webp" alt="Wanderweg direkt beim Haus (Foto: bisherige Website)" width="255" height="191" loading="lazy" decoding="async"><span class="sym own">Foto: Gästehaus</span></figure>
+          <h3>Wandern ab der Haustür</h3><p>Direkt vor dem Haus beginnen viele Wanderwege – „so weit Sie mögen (oder können)“ – in die Allgäuer und Österreichischen Alpen.</p>
+        </article>
+        <article class="tile s-sommer" data-reveal style="--i:1">
+          <figure><img class="stock" src="img/stock/hochgrat.webp" srcset="img/stock/hochgrat-800.webp 900w, img/stock/hochgrat.webp 1600w" sizes="(min-width:900px) 25vw, 90vw" alt="Blick auf den Hochgrat bei Oberstaufen" width="1600" height="1067" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Hochgrat &amp; Nagelfluhkette</h3><p>Der Hausberg über Steibis – im Sommer Wandergebiet, im Winter Skigebiet.</p>
+        </article>
+        <article class="tile s-sommer" data-reveal style="--i:2">
+          <figure><img class="stock" src="img/stock/kaeserei.webp" srcset="img/stock/kaeserei-800.webp 900w, img/stock/kaeserei.webp 1600w" sizes="(min-width:900px) 25vw, 90vw" alt="Bergkäserei in Steibis" width="1600" height="1200" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Schmankerl &amp; Heimatabende</h3><p>Abends sorgen Heimatabende und die hiesige Schmankerlküche für Kurzweil – für Seele und Körper.</p>
+        </article>
+        <article class="tile s-sommer" data-reveal style="--i:3">
+          <figure><img class="stock" src="img/stock/panorama.webp" srcset="img/stock/panorama-800.webp 900w, img/stock/panorama.webp 1600w" sizes="(min-width:900px) 25vw, 90vw" alt="Panorama von Oberstaufen mit Hochgrat und Imberg" width="1600" height="902" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Tagesausflüge</h3><p>Mit Bus oder Auto: Bodensee, Kleinwalsertal, Oberstdorf, Königsschlösser oder einer der vielen Badeseen.</p>
+        </article>
+        <article class="tile s-winter" data-reveal style="--i:0">
+          <figure><img class="stock" src="img/stock/winterhang.webp" srcset="img/stock/winterhang-800.webp 900w, img/stock/winterhang.webp 1600w" sizes="(min-width:900px) 25vw, 90vw" alt="Verschneiter Hang mit Häusern" width="1600" height="748" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Ski-Arena Steibis</h3><p>Die Lifte sind direkt am Ort – Abfahrten und Loipen in verschiedenen Schwierigkeitsgraden.</p>
+        </article>
+        <article class="tile s-winter" data-reveal style="--i:1">
+          <figure><img class="stock" src="img/stock/imbergbahn.webp" srcset="img/stock/imbergbahn-800.webp 900w, img/stock/imbergbahn.webp 1600w" sizes="(min-width:900px) 25vw, 90vw" alt="Imbergbahn bei Oberstaufen im Winter" width="1600" height="900" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Skischule „Christel Cranz“</h3><p>Die ortsansässige Skischule – mit Ski-Kindergarten für die Kleinsten.</p>
+        </article>
+        <article class="tile s-winter" data-reveal style="--i:2">
+          <figure><img class="stock" src="img/stock/gipfelkreuz.webp" srcset="img/stock/gipfelkreuz-800.webp 600w, img/stock/gipfelkreuz.webp 1066w" sizes="(min-width:900px) 25vw, 90vw" alt="Gipfelkreuz auf dem Hochgrat im Schnee" width="1066" height="1600" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Winterwandern</h3><p>Wanderungen durch verschneite Landschaften – oder eine Pferdeschlittenfahrt.</p>
+        </article>
+        <article class="tile s-winter" data-reveal style="--i:3">
+          <figure><img class="stock" src="img/stock/winterfenster.webp" srcset="img/stock/winterfenster-800.webp 695w, img/stock/winterfenster.webp 1236w" sizes="(min-width:900px) 25vw, 90vw" alt="Gemütlicher Platz am Fenster im Winter" width="1236" height="1600" loading="lazy" decoding="async"><span class="sym">Symbolbild</span></figure>
+          <h3>Aquaria &amp; Aufwärmen</h3><p>Wenn das Wetter nicht lockt: Im Nachbarort Oberstaufen liegt das Erlebnisbad Aquaria.</p>
+        </article>
+  </div>
+  <div class="wrap strip" aria-label="Weitere Eindrücke (Symbolbilder)">
+    <figure><img class="stock" src="img/stock/steibis.webp" srcset="img/stock/steibis-800.webp 900w, img/stock/steibis.webp 1209w" sizes="(min-width:900px) 25vw, 60vw" alt="Steibis von oben" width="1209" height="783" loading="lazy" decoding="async"><figcaption>Steibis <span class="sym">Symbolbild</span></figcaption></figure>
+    <figure><img class="stock" src="img/stock/kuh.webp" srcset="img/stock/kuh-800.webp 900w, img/stock/kuh.webp 1600w" sizes="(min-width:900px) 25vw, 60vw" alt="Braune Kuh auf einem Bergweg" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Allgäu <span class="sym">Symbolbild</span></figcaption></figure>
+    <figure><img class="stock" src="img/stock/sonnenaufgang.webp" srcset="img/stock/sonnenaufgang-800.webp 900w, img/stock/sonnenaufgang.webp 1600w" sizes="(min-width:900px) 25vw, 60vw" alt="Sonnenstrahlen über Berggipfeln" width="1600" height="1068" loading="lazy" decoding="async"><figcaption>Bergmorgen <span class="sym">Symbolbild</span></figcaption></figure>
+    <figure><img class="stock" src="img/stock/wiese.webp" srcset="img/stock/wiese-800.webp 900w, img/stock/wiese.webp 1600w" sizes="(min-width:900px) 25vw, 60vw" alt="Grüne Bergwiese" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Wiesen <span class="sym">Symbolbild</span></figcaption></figure>
+    <figure><img class="stock" src="img/stock/landschaft.webp" srcset="img/stock/landschaft-800.webp 900w, img/stock/landschaft.webp 1600w" sizes="(min-width:900px) 25vw, 60vw" alt="Grüne Hügel und Berge" width="1600" height="1037" loading="lazy" decoding="async"><figcaption>Weite <span class="sym">Symbolbild</span></figcaption></figure>
+  </div>
+  <div class="wrap plus">
+    <p><b>Oberstaufen PLUS</b> – Als Partnerbetrieb erhalten Sie bei uns Ihren Gästepass mit Oberstaufen PLUS (Mehrzweck-Gutschein) und genießen damit attraktive Vorteile und Erlebnisse für die Dauer Ihres Aufenthalts.</p>
+    <a class="btn btn-line" href="https://www.oberstaufen.de/urlaub/oberstaufen-plus/" target="_blank" rel="noopener">Mehr zu Oberstaufen PLUS ↗</a>
+  </div>
+</section>
+
+<section id="anfahrt" class="anfahrt" data-chapter="Anfahrt" data-ch-no="05">
+  <div class="wrap an-grid">
+    <div>
+      <p class="kicker">05 · Der letzte Kilometer</p>
+      <h2 data-split>Was Ihr Navi <em>nicht weiß.</em></h2>
+      <ol class="weg">
+        <li>Direkt nach dem Ortsschild <b>Steibis rechts abbiegen</b>.</li>
+        <li>Dann einfach geradeaus, bis Sie unser Haus „auftauchen“ sehen.</li>
+        <li>Neben einem <b>Holzstadel</b> meint Ihr Navi: „Sie haben Ihr Ziel erreicht!“ – fast geschafft.</li>
+        <li>Einfach noch <b>ein paar Dutzend Meter</b> weiter. Wir freuen uns auf Sie!</li>
+      </ol>
+      <p><a class="btn btn-line" href="https://www.openstreetmap.org/?mlat=47.5323302&mlon=10.0177167#map=17/47.5323302/10.0177167" target="_blank" rel="noopener">Route in OpenStreetMap ↗</a></p>
+    </div>
+    <div class="an-right">
+      <figure class="sketch"><svg class="route" viewBox="0 0 640 300" role="img" aria-labelledby="route-t" data-draw>
+  <title id="route-t">Skizze: Nach dem Ortsschild Steibis rechts abbiegen, geradeaus bis zum Holzstadel, dann noch ein paar Dutzend Meter bis zum Gästehaus Teufele.</title>
+  <path class="rd" pathLength="1" d="M20 270 C120 262 150 240 168 214"/>
+  <path class="rd" pathLength="1" style="--d:.5s" d="M168 214 C200 200 260 196 320 190 S470 172 520 120 S585 64 610 50"/>
+  <g class="pin p1"><rect x="132" y="168" width="72" height="30" rx="3"/><text x="168" y="188">Steibis</text><path d="M168 198v20"/></g>
+  <g class="pin p2"><path class="arr" d="M178 232 q24-6 36-24 l-8 0 m8 0 l1 9"/><text class="h" x="226" y="246">rechts!</text></g>
+  <g class="pin p3"><path d="M436 160 l26-18 26 18 v26 h-52z"/><path d="M444 186v-18M452 186v-18M460 186v-18M468 186v-18M476 186v-18"/><text class="h" x="462" y="214" text-anchor="middle">Holzstadel – „Ziel erreicht?“</text></g>
+  <g class="pin p4"><path d="M590 74 l20-16 20 16 v24 h-40z"/><rect x="603" y="84" width="10" height="14"/><text class="h" x="584" y="38" text-anchor="end">… noch ein paar Dutzend Meter!</text></g>
+</svg><figcaption class="hand">frei nach der Wegbeschreibung des Hauses</figcaption></figure>
+      <div class="map" id="map" data-coords="47.5323302,10.0177167" data-title="Karte: Gästehaus Teufele, Am Schwedenkreuz 18, Steibis">
+        <div class="map-placeholder"><strong>Am Schwedenkreuz 18</strong>87534 Oberstaufen-Steibis</div>
+        <div class="map-consent"><p>Karte von OpenStreetMap laden? Dabei wird Ihre IP-Adresse an OpenStreetMap übertragen.</p><button class="btn" type="button" data-map-load="map">Karte laden</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="anfrage" class="anfrage" data-chapter="Anfrage" data-ch-no="06">
+  <canvas class="an-snow s-winter-only" data-particles="snow" aria-hidden="true"></canvas>
+  <div class="wrap an2-grid">
+    <div class="an-text">
+      <p class="kicker k-light">06 · Anfrage</p>
+      <h2 data-split>Wir freuen uns <em>auf Ihre Anfrage.</em></h2>
+      <dl class="clist">
+        <div><dt>Telefon</dt><dd><a href="tel:+4983868326">+49 (0) 8386 / 8326</a></dd></div>
+        <div><dt>E-Mail</dt><dd><a href="mailto:info@gaestehaus-teufele.de">info@gaestehaus-teufele.de</a></dd></div>
+        <div><dt>Post</dt><dd>Gästehaus Teufele<br>Am Schwedenkreuz 18<br>87534 Oberstaufen-Steibis</dd></div>
+        <div><dt>Erreichbar</dt><dd><span class="ph">Telefonzeiten ergänzen</span></dd></div>
+      </dl>
+    </div>
+    <form class="an-form" data-demo-form="Demo: Ihre Anfrage würde jetzt an das Gästehaus Teufele gehen. Es wurde nichts gesendet." novalidate>
+      <p class="tag-line hand">Anfrage – noch keine Buchung</p>
+      <div class="two">
+        <label class="fld">Anreise<input type="date" name="an" required></label>
+        <label class="fld">Abreise<input type="date" name="ab" required></label>
+      </div>
+      <div class="two">
+        <label class="fld">Zimmerwunsch<select name="zimmer"><option value="egal">egal – Hauptsache Steibis</option><option value="1">Nr. 1 · Doppelzimmer</option><option value="2">Nr. 2 · Doppelzimmer</option><option value="3">Nr. 3 · Doppelzimmer</option><option value="8">Nr. 8 · Einzelzimmer</option><option value="9">Nr. 9 · Doppelzimmer</option><option value="10">Nr. 10 · Doppelzimmer</option><option value="11">Nr. 11 · Doppelzimmer</option></select></label>
+        <label class="fld">Personen<input name="pers" required placeholder="z. B. 2 Erwachsene, 1 Kind (5)"></label>
+      </div>
+      <label class="fld">Nachricht<textarea name="text" rows="3" placeholder="Hund dabei? Veganes Frühstück? Fragen zur Anreise?"></textarea></label>
+      <div class="two"><label class="fld">Name<input name="name" required autocomplete="name"></label><label class="fld">Telefon oder E-Mail<input name="kontakt" required></label></div>
+      <label class="chk"><input type="checkbox" required> Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage genutzt werden. <span class="ph">Datenschutz-Hinweis final</span></label>
+      <button class="btn magnetic" type="submit">Anfrage senden (Demo)</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <canvas class="foot-snow s-winter-only" data-particles="snow" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="foot-key" aria-hidden="true"><span class="fk-ring"></span><span class="fk-tag"><b>Teufele</b><small>Bitte an der Rezeption abgeben – oder einfach wiederkommen.</small></span></div>
+    <div class="foot-cols">
+      <p><strong>Gästehaus Teufele</strong><br>Am Schwedenkreuz 18<br>87534 Oberstaufen-Steibis</p>
+      <p>Tel. <a href="tel:+4983868326">08386 8326</a><br><a href="mailto:info@gaestehaus-teufele.de">info@gaestehaus-teufele.de</a></p>
+      <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="index.html#anfrage">Anfrage</a></nav>
+    </div>
+    <p class="small">Inoffizielle Demo-Website, erstellt als Vorschlag. Texte, Zimmer, Preise und die als „Foto: Gästehaus“ markierten Bilder: bisherige Website gaestehaus-teufele.de (abgerufen 02.11.2026). Mit „Symbolbild“ markierte Fotos zeigen nicht das Gästehaus: Unsplash (<a href="https://unsplash.com/photos/grune-baume-und-berge-unter-weissen-wolken-und-blauem-himmel-tagsuber-VUAQ4FSZtq4" target="_blank" rel="noopener">Daniel Angele</a>, <a href="https://unsplash.com/photos/grunes-grasfeld-in-der-nahe-des-berges-tagsuber-tlVbaOnPC0c" target="_blank" rel="noopener">Lukas Gächter</a>, <a href="https://unsplash.com/photos/braune-kuh-auf-dem-alpine-mountain-trail-G0ghMvt4nq4" target="_blank" rel="noopener">Michael Blösch</a>, <a href="https://unsplash.com/photos/ein-buffettisch-mit-verschiedenen-gerichten-und-speisen-Jfif0cYXTFI" target="_blank" rel="noopener">Alexander Mass</a>, <a href="https://unsplash.com/photos/frau-sitzt-im-winter-am-bett-und-schaut-am-fenster-51adhgg5KkE" target="_blank" rel="noopener">Nachelle Nocom</a>, <a href="https://unsplash.com/photos/modernes-schlafzimmer-mit-holzakzenten-und-naturlichem-licht-CMHgRFDANH8" target="_blank" rel="noopener">Marcel Strauß</a>, <a href="https://unsplash.com/photos/ein-feld-mit-wildblumen-und-einem-berg-im-hintergrund-0eRxPqdVqlM" target="_blank" rel="noopener">Claudio Biesele</a>, <a href="https://unsplash.com/photos/ein-schneebedeckter-hang-mit-hausern-und-baumen-im-vordergrund-XB6_wsO7b4U" target="_blank" rel="noopener">World of Magic</a>, <a href="https://unsplash.com/photos/schwarzbrot-im-sack-DzGefKHQA9A" target="_blank" rel="noopener">Daniel Schludi</a>, <a href="https://unsplash.com/photos/sonnenstrahlen-brechen-durch-wolken-uber-berggipfeln-Z5TV7ylXLrI" target="_blank" rel="noopener">Daniel Seßler</a>), Unsplash License · Wikimedia Commons: „Blick auf den Hochgrat bei Oberstaufen (Allgäu)“ von <a href="https://commons.wikimedia.org/wiki/File:Blick_auf_den_Hochgrat_bei_Oberstaufen_(Allg%C3%A4u).jpg" target="_blank" rel="noopener">Stefan Oemisch</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>; „Imbergbahn bei Oberstaufen“ von <a href="https://commons.wikimedia.org/wiki/File:Imbergbahn_bei_Oberstaufen.jpg" target="_blank" rel="noopener">Stefan Oemisch</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>; „Gipfelkreuz auf dem Hochgrat (Allgäu) (1)“ von <a href="https://commons.wikimedia.org/wiki/File:Gipfelkreuz_auf_dem_Hochgrat_(Allg%C3%A4u)_(1).jpg" target="_blank" rel="noopener">Stefan Oemisch</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>; „Oberstaufen - Hochgrat - Hochhäderich, Fluh, Imberg“ von <a href="https://commons.wikimedia.org/wiki/File:Oberstaufen_-_Hochgrat_-_Hochh%C3%A4derich,_Fluh,_Imberg.jpg" target="_blank" rel="noopener">Flodur63</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>; „SteibisImberg010“ von <a href="https://commons.wikimedia.org/wiki/File:SteibisImberg010.jpg" target="_blank" rel="noopener">Herbert Bader</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>; „Bergkäserei Steibis - panoramio“ von <a href="https://commons.wikimedia.org/wiki/File:Bergk%C3%A4serei_Steibis_-_panoramio.jpg" target="_blank" rel="noopener">qwesy qwesy</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener">CC BY 3.0</a> (Bilder zugeschnitten und verkleinert). Der Assistent ist ein regelbasierter Demo-Chat.</p>
+  </div>
+</footer>
+<aside class="key-ind" data-chapter-ind aria-hidden="true"><span class="ki-ring"></span><span class="ki-tag"><b data-ch-no>00</b><span data-ch-label>Ankommen</span></span></aside>
+<nav class="mobile-bar" aria-label="Schnellzugriff"><a href="#anfrage">Anfragen</a><a href="tel:+4983868326">Anrufen · 08386 8326</a></nav>
+<script>window.TEUFELE_ROOMS={"1": {"art": "DZ", "aus": ["Dusche", "Balkon", "WC auf dem Flur"], "s": [68, 62, 57], "w": [76, 68, 63], "note": "Zustellbett für Kleinkind (bis ca. 4 Jahre) möglich"}, "2": {"art": "DZ", "aus": ["Dusche", "Balkon", "WC auf dem Flur"], "s": [65, 58, 55], "w": [73, 65, 60], "note": ""}, "3": {"art": "DZ", "aus": ["Dusche", "Balkon", "WC auf dem Flur"], "s": [65, 58, 55], "w": [73, 65, 60], "note": ""}, "8": {"art": "EZ", "aus": ["Dusche", "WC auf dem Flur", "TV"], "s": [68, 62, 57], "w": [76, 68, 63], "note": ""}, "9": {"art": "DZ", "aus": ["Dusche", "WC", "TV"], "s": [75, 67, 62], "w": [81, 73, 68], "note": ""}, "10": {"art": "DZ", "aus": ["Dusche", "WC", "TV", "Balkon"], "s": [78, 70, 65], "w": [83, 75, 70], "note": ""}, "11": {"art": "DZ", "aus": ["Dusche", "WC", "TV", "Balkon"], "s": [78, 70, 65], "w": [83, 75, 70], "note": ""}};</script>
+<script src="js/base.js" defer></script>
+<script src="js/fx.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/premium.js" defer></script>
+<script src="chatbot/chatbot.js" data-kb="chatbot/kb.json" defer></script>
+</body>
+</html>
