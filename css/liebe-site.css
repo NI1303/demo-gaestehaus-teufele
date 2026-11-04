@@ -1,0 +1,14 @@
+/* Gästehaus Teufele – liebevolle Details (Schlüsselbrett, Steibis). Wird von liebe_inject.py nicht überschrieben. */
+:root{--lv-hand:'Nothing',cursive;--lv-ink:var(--ziegel);--lv-ul:var(--ziegel);--lv-tex-o:.35;--lv-note-fs:1.45rem;--lv-ul-w:210px;--lv-egg-fs:1.35rem}
+.zimmer,.anfrage{--lv-ink:#e9c9a0;--lv-ul:#e9c9a0}
+.footer .fk-tag{position:relative}
+.lv-egg-bell{--lv-egg-ink:currentColor}
+.lv-egg-bell .lv-egg-btn svg{transform-origin:50% 8%}
+.lv-egg-bell.lv-egg-on .lv-egg-btn svg{animation:lvRing 1.1s ease}
+@keyframes lvRing{15%{transform:rotate(16deg)}35%{transform:rotate(-13deg)}55%{transform:rotate(8deg)}75%{transform:rotate(-4deg)}100%{transform:none}}
+.lv-egg-bell .lv-egg-msg{position:absolute;right:0;top:100%;width:12rem;margin-top:.5rem;text-align:right;color:#f4ead8}
+.footer .lv-foot{--lv-foot-heart:var(--ziegel)}
+@media (max-width:899px){.lv-egg-bell{right:.6rem!important;top:auto!important;bottom:-3.4rem}.lv-egg-bell .lv-egg-msg{background:rgba(20,38,48,.94);padding:.4rem .7rem;border-radius:10px;z-index:2}}
+@media (prefers-reduced-motion:reduce){.lv-egg-bell.lv-egg-on .lv-egg-btn svg{animation:none}}
+.lv-404{--lv-404-bg:#f8f4ec;--lv-404-ink:#1f2a22;--lv-404-accent:#ad4430;--lv-404-font:'Karla',system-ui,sans-serif;--lv-404-display:'Gloock',Georgia,serif;--lv-404-r:14px;--lv-404-hw:400}
+.lv-404-art{color:#4d6a4b}

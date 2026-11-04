@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="chatbot/chatbot.css">
 <link rel="stylesheet" href="css/premium.css">
+<!--liebe--><link rel="stylesheet" href="css/liebe.css"><link rel="stylesheet" href="css/liebe-site.css"><!--/liebe-->
+
 <script>document.documentElement.classList.add('js')</script>
 <script>try{var q=new URLSearchParams(location.search).get('saison'),s=q||localStorage.getItem('teufele-saison');if(!s){var d=new Date(),m=d.getMonth()+1,t=d.getDate();s=(m>4&&m<11)||(m==4&&t>=15)||(m==11&&t<=2)?'sommer':'winter'}document.documentElement.dataset.season=s==='winter'?'winter':'sommer'}catch(e){}</script>
 <script>try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('demo-intro'))document.documentElement.classList.add('intro-on')}catch(e){}</script>
@@ -367,5 +369,6 @@
 <script src="js/main.js" defer></script>
 <script src="js/premium.js" defer></script>
 <script src="chatbot/chatbot.js" data-kb="chatbot/kb.json" defer></script>
+<!--liebe--><script type="application/json" id="liebe-cfg">{"underline": [{"sel": ".haus-text h2, .preise h2, .rundherum h2, .anfahrt h2", "style": "wave"}, {"sel": ".zimmer h2, .anfrage h2", "style": "loop", "color": "#e9c9a0"}], "notes": [{"at": ".haus-text .ticks", "text": "Hunde dürfen mit!", "arrow": "ul", "rot": 3, "css": {"right": "0", "bottom": "-2.6rem"}}, {"at": ".preise-grid .intro-p", "text": "inkl. Frühstücksbuffet!", "arrow": "dl", "rot": -3, "m": "inline", "css": {"right": "-1rem", "top": "-2.6rem"}}, {"at": ".anfahrt .weg", "text": "wir freuen uns auf Sie!", "arrow": "ul", "rot": 3, "m": "inline", "css": {"right": "0", "bottom": "-2.8rem"}}], "frames": [{"sel": ".rundherum .strip figure", "kind": "tape"}], "lift": ".rundherum .tile", "squish": ".btn, .fob, .mobile-bar a", "burst": {"sel": ".btn, a[href^='tel:'], .mobile-bar a", "shapes": ["flower", "leaf", "heart"], "colors": ["#ad4430", "#4d6a4b", "#e3b04b", "#d97f6a"], "n": 7}, "egg": {"at": ".footer .fk-tag", "type": "bell", "label": "Kuhglocke läuten", "hint": "Bim-bam?", "svg": "<svg width='46' height='54' viewBox='0 0 46 54' aria-hidden='true'><path d='M14 4h18v6H14z' fill='#7a5230'/><path d='M12 10h22l5 32H7z' fill='#c99a3b' stroke='#6b4a1d' stroke-width='2' stroke-linejoin='round'/><path d='M10 24h26' stroke='#6b4a1d' stroke-width='1.5' opacity='.6'/><circle cx='23' cy='46' r='4.5' fill='#6b4a1d'/><path d='M16 14c-1 6-2 14-3 22' stroke='#fff3c4' stroke-width='2' stroke-linecap='round' opacity='.6'/><\/svg>", "msg": "Bim-bam! Grüße aus Steibis, 890&nbsp;m über dem Meer.", "autoclose": 6000, "css": {"right": "-3.6rem", "top": ".2rem"}}, "foot": {"at": ".footer .wrap", "after": ".foot-cols", "text": "Schön, dass Sie vorbeigeschaut haben – bis bald in Steibis!", "top": "Zurück zum Ankommen", "shape": "heart"}, "texture": "linen"}</script><script src="js/liebe.js" defer></script><!--/liebe-->
 </body>
 </html>

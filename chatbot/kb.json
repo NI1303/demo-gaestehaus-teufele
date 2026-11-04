@@ -16,7 +16,7 @@
   "font": "'Karla', system-ui, sans-serif",
   "serif": "'Gloock', Georgia, serif"
  },
- "greeting": "Grüß Gott beim Gästehaus Teufele in Steibis (890 m)! Ich helfe bei Fragen zu Zimmern, Preisen, Frühstück, Hund, Umgebung und Anfahrt. Buchen kann ich nicht – dafür ist das Gästehaus direkt da.",
+ "greeting": "Grüß Gott und schön, dass Sie den Weg hinauf nach Steibis (890 m) gefunden haben – zumindest schon mal online! Ich helfe gern bei Fragen zu Zimmern, Preisen, Frühstück, Hund, Umgebung und Anfahrt. Buchen kann ich nicht – dafür ist das Gästehaus direkt für Sie da.",
  "chips": [
   {
    "label": "Zimmer"
@@ -433,7 +433,19 @@
     "finden",
     "finde",
     "parken",
-    "weg"
+    "weg",
+    "wo finde",
+    "finde ich",
+    "wo finden",
+    "wo seid ihr",
+    "wo genau",
+    "wie kommt man",
+    "komme ich hin",
+    "hinkommen",
+    "hinfahren",
+    "wegbeschreibung",
+    "standort",
+    "anschrift"
    ],
    "answer": "**Gästehaus Teufele**\nAm Schwedenkreuz 18\n87534 Oberstaufen-Steibis\n\nTipp des Hauses: Direkt nach dem Ortsschild Steibis **rechts abbiegen** und geradeaus. Meldet das Navi am Holzstadel „Ziel erreicht“ – noch ein paar Dutzend Meter weiter!",
    "links": [
